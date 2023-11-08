@@ -3,7 +3,7 @@
 import openai
 
 # Define your OpenAI API key and model ID
-api_key = "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"
+api_key = "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"
 model_id = "gpt-3.5-turbo"  # You can adjust the model as needed
 
 # Initialize the OpenAI API client
