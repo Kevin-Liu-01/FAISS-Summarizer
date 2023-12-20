@@ -1,8 +1,4 @@
 #Using ReduceDocumentsChain
-#Simple 
-#The refine documents chain constructs a response by looping over the input documents and iteratively updating its answer. 
-#For each document, it passes all non-document inputs, the current document, and the latest intermediate answer to an 
-#LLM chain to get a new answer.
 
 from dotenv import load_dotenv
 import os
@@ -16,7 +12,6 @@ from langchain.document_loaders import TextLoader
 load_dotenv()
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 docs = TextLoader( "summary.txt" ).load()
-
 
 prompt_template = """Write a concise summary of the following:
 {text}
